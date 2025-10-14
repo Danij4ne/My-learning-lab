@@ -231,14 +231,50 @@ public class HelloWorld { //Obligatorio public = publico , class = tipo clase ,
         System.out.println(((a + b) * 2 > c) && !q);
         // nota: (11 + 4)*2 = 30 > 2.5 = true && !false = true → resultado final: true
 
-        //2:15:40
 
+        //Concatenacion
 
+        String name1 = "Daniel";
+        String surname1 = "Jane";
 
+        System.out.println(name1 + " " + surname1); //concatenar
 
+        //Lenght (longitud)
 
+        System.out.println(name1.length()); // = 6 , tiene 6 letras
 
+        // charAt (Obtener Caracter)
 
+        System.out.println(name1.charAt(1)); // = a la posicion 1 tenemos a de Daniel
+
+        System.out.println(name1.charAt(name1.length() -1 )) ; // hago el charAt de la longitud -1 y asi digo la ultima letra sin necesidad de saber que longitud exacta tiene la variable
+
+        //Substring (subcadena)
+
+        System.out.println(name1.substring(2)); //imprime del caracter 2 hacia adelante = niel
+        System.out.println(name1.substring(1,3)); //imprime del caracter 1 y acaba en el 2 (excluye el valor del indice final
+
+        // Mayusculas y minusculas (toLowerCase, toUpperCase)
+
+        System.out.println(name1.toLowerCase()); //todo en minusculas
+        System.out.println(name1.toUpperCase()); //TODO EN MAYUSCULAS
+
+        //Contains (si contiene algo)
+
+        System.out.println("Hola Java".contains("Dani")); //False , no contiene Dani la palabra "Hola Java"
+        System.out.println("Hola Java".contains("AVA")); //False porque esta en mayuscula
+        System.out.println("Hola Java".toUpperCase().contains("AVA")); //True , hemos convertido a maysucula toda la palabra y despues hemos mirado si contiene AVA
+
+        //Comparar (equals) si es igual
+
+        System.out.println(name1.equals("Daniel")); //true
+        System.out.println(name1.equals("daniel")); //False por la d minuscula
+        System.out.println(name1.equalsIgnoreCase("daniel")); //equalsIgnoreCase Ignora si son mayusuclas o minuscular
+
+        // == vs equals y porque tenemos que usar equals como buena practica 2:34:45
+
+        var D = "Daniel";
+        var DA = "Daniel";
 
 
 
