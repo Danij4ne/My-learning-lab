@@ -271,11 +271,61 @@ public class HelloWorld { //Obligatorio public = publico , class = tipo clase ,
         System.out.println(name1.equals("daniel")); //False por la d minuscula
         System.out.println(name1.equalsIgnoreCase("daniel")); //equalsIgnoreCase Ignora si son mayusuclas o minuscular
 
-        // == vs equals y porque tenemos que usar equals como buena practica 2:34:45
+        // == vs equals y porque tenemos que usar equals como buena practica
 
         var D = "Daniel";
         var DA = "Daniel";
+        var DAN = new String ("Daniel");
 
+        System.out.println(D == DA); //true , el signo de igualdad es una comparacion del propio objeto entonces para el D y DA son dos cadenas iguales
+        System.out.println(D == DAN); //false , pero DAN tenemos un objeto diferente porque lo hemos creado de = new String
+        System.out.println(D.equals(DAN)); // true , porque equals compara contenido
+
+
+        //trim (eliminar espacios al principio y al final del string)
+        System.out.println("Me llamo Daniel");
+        System.out.println(" Me llamo Daniel ".trim()); //para limpiar cadenas de texto
+
+        //replace (remplazar)
+        System.out.println(" Me llamo Daniel ".replace(" ", "")); // eliminar los espacios que hay entre las letras (" ") , y que no hayan espacios ("")
+        System.out.println(" Me llamo Daniel ".replace("Daniel", "Dani")); //Remplazas el nombre Daniel por Dani
+
+        //Format f() formatear /sustituir
+            // %s = cadenas de texto , %d = numeros enteros, %f = numeros decimales
+        String yourName = "Dani";
+        int yourAge = 24;
+        System.out.println(String.format("Hola , mi nombre es %s , y mi edad es %d", yourName , yourAge));
+
+        //Mini ejercicios (String exercices)
+
+        // 1. Concatena dos cadenas de texto.
+
+
+        // 2. Muestra la longitud de una cadena de texto.
+
+
+        // 3. Muestra el primer y último carácter de un string.
+
+
+        // 4. Convierte a mayúsculas y minúsculas un string.
+
+
+        // 5. Comprueba si una cadena de texto contiene una palabra concreta.
+
+
+        // 6. Formatea un string con un entero.
+
+
+        // 7. Elimina los espacios en blanco al principio y final de un string.
+
+
+        // 8. Sustituye todos los espacios en blanco de un string por un guion (-).
+
+
+        // 9. Comprueba si dos strings son iguales.
+
+
+        // 10. Comprueba si dos strings tienen la misma longitud.
 
 
 
