@@ -300,34 +300,55 @@ public class HelloWorld { //Obligatorio public = publico , class = tipo clase ,
 
         // 1. Concatena dos cadenas de texto.
 
+            String cadena1 = "Hola";
+            String cadena2 = "Amigos";
+            System.out.println( cadena1 + " mis queridos " + cadena2);
+
 
         // 2. Muestra la longitud de una cadena de texto.
 
+            System.out.println(cadena1.length());
 
         // 3. Muestra el primer y último carácter de un string.
-
+        System.out.println("" + cadena1.charAt(0) + cadena1.charAt(cadena1.length() -1));
 
         // 4. Convierte a mayúsculas y minúsculas un string.
-
+        String onePerson = "Gustavo";
+        System.out.println(onePerson.toUpperCase());
+        System.out.println(onePerson.toLowerCase());
 
         // 5. Comprueba si una cadena de texto contiene una palabra concreta.
 
+        System.out.println(onePerson.contains("ta"));
 
         // 6. Formatea un string con un entero.
 
+        String elString = "Dani";
+        int elInt = 24;
+
+        System.out.println(String.format("Buenos dias %s , tu edad es %d ", elString, elInt));
 
         // 7. Elimina los espacios en blanco al principio y final de un string.
 
+        System.out.println(" Me llamo  Gustavo".trim());
 
         // 8. Sustituye todos los espacios en blanco de un string por un guion (-).
 
+        System.out.println("Bienvenidos al club de sumo".replace(" ", "-"));
 
         // 9. Comprueba si dos strings son iguales.
+        String theSame = "el mismo";
+        String theSame1 = "el mismo";
 
+        System.out.println(theSame.equals(theSame1));
 
         // 10. Comprueba si dos strings tienen la misma longitud.
 
-
+            if(theSame.length() == theSame1.length() ){
+                System.out.println("Tienen la misma longitud");
+            } else{
+                System.out.println("No tienen la misma longitud");
+            }
 
 
 
