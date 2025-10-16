@@ -37,7 +37,7 @@ public class Metodos {
 
         lectorTeclado.close();                             // cierro el lector (libero el recurso)
     }
-    
+
 
 
 }
