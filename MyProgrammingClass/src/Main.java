@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
     //Public = todo el mundo lo puede ver
     //static = no necesita ningun intermediario para poder ejecutarse , se ejucta directamente
@@ -54,9 +55,8 @@ public class Main {
         //Variables segun el ambito que tienen -> sitios donde una variable es visible
 
 
-
 }
-    public void nombreMetodo(){  //metodo / funcion , void = que el metodo no retorna ningun valor,
+    public static void nombreMetodo(){  //metodo / funcion , void = que el metodo no retorna ningun valor,
         int edadMetodo = 12; //esta varaible solo existe aqui fuera del } no existe
         System.out.println(edadMetodo);
     }
