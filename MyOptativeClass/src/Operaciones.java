@@ -23,5 +23,15 @@ public class Operaciones {
 // Private = nadie puede llamarlo menos un metodo de la misma clase
 
 
+    public int multiplicacion( int op1 , int op2){ //quitas el void para poner un return
+        int resultado = op1 * op2;
+        return resultado; //para que no imprima sino que retorne el resultado
+    }
+
+    public boolean validarNumero(int numero){
+        return numero > 10;
+    }
+    
+
 
 }

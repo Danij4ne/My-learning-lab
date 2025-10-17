@@ -9,11 +9,11 @@ public class Main {
         //Operaciones = como se llama la carpeta , operacionesMatematicas = nombre variable , new Operaciones() = le das el poder de all lo que hay dentro de la carpeta
         operacionesMatematicas.sumar(3,2); //utilizamos sus funciones sumar
         operacionesMatematicas.restar(3,2); //Restar
-
+        operacionesMatematicas.multiplicacion(2,3); //lo retorna y puedes gigualarlo
 
 
     }
-    public static void saludar (String name ){ //crear funcion
+    public static void saludar (String name ){ //crear funcion void = retorno
         System.out.println("Hola" +name);
         System.out.println("Buenos dias");
         System.out.println("Que tal estas");
