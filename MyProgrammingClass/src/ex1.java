@@ -70,7 +70,10 @@ public class ex1 {
 
         //ex5
 
-        
+        System.out.println("Introduce el precio del producto :" );
+        int precioProducto = doubt.nextInt();
+        System.out.println("Introduce el precio de descuento :" );
+        int  precioDescuento = doubt.nextInt();
 
 
 
