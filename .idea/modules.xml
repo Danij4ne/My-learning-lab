@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExercicesJava/ExercicesJava.iml" filepath="$PROJECT_DIR$/ExercicesJava/ExercicesJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hello-Java/Hello-Java.iml" filepath="$PROJECT_DIR$/Hello-Java/Hello-Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/My-learning-lab.iml" filepath="$PROJECT_DIR$/.idea/My-learning-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyOptativeClass/MyOptativeClass.iml" filepath="$PROJECT_DIR$/MyOptativeClass/MyOptativeClass.iml" />

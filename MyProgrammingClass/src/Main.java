@@ -68,8 +68,6 @@ public class Main {
         System.out.println(this.edadGlobal); //cojo la variable edadGlobal declarada arriba del todo
     }
 
-
-
 }
 
 

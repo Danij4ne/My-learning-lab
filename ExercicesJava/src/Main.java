@@ -88,11 +88,11 @@ public class Main {
         int minutos = (segundosTotales % 3600) / 60;
         int segundos = (segundosTotales % 3600) % 60;
 
+
         System.out.printf("Horas: %d%n", horas);
         System.out.printf("Minutos: %d%n", minutos);
         System.out.printf("Segundos: %d%n", segundos);
 
-        lector.close();
 
 
 
