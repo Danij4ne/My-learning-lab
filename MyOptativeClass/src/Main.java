@@ -1,3 +1,7 @@
+//import nombrePaquete.Nombreclase
+import controler.GestorUsuarios; //importas las funciones dentro de la carpeta controler la hoja GestorUsuarios
+//import controller.*  --> importas todos los archivos que hay dentro de la carpeta controler para utilizar todas las operaciones de todos los documentos
+
 public class Main {
     //Public = todo el mundo lo puede ver
     //static = no necesita ningun intermediario para poder ejecutarse , se ejucta directamente
@@ -9,6 +13,23 @@ public class Main {
         //Operaciones = como se llama la carpeta , operacionesMatematicas = nombre variable , new Operaciones() = le das el poder de all lo que hay dentro de la carpeta
         operacionesMatematicas.sumar(3,2); //utilizamos sus funciones sumar
         operacionesMatematicas.restar(3,2); //Restar
+
+
+        GestorUsuarios gestorUsuarios = new GestorUsuarios();
+        gestorUsuarios.validarUsuario("Hola" ,  21); //
+
+
+        //AutoBoxing
+       Integer numero = 20; //pasas de un tipo menor a uno mayor de inter a Intenger
+        //ahora numero es envolvente y puedes acceder a todas las funciona
+
+
+        //Unboxing (lo contrario a Autoboxing)
+        Integer numero1 = 20;  //tienes un tipo mayor
+        int numeroBase = numero1; //y lo pasas a uno menor
+
+
+
 
 
 
