@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6c4ccb7-f1fa-4ce5-8896-3ef37685be17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Database/GestionConexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controler/GestorUsuarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/IntelliLang.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExercicesJava/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExercicesJava/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExercicesJava/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExercicesJava/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExercicesJava/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ExercicesJava/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello-Java/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello-Java/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello-Java/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hello-Java/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyProgrammingClass/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyProgrammingClass/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyProgrammingClass/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyProgrammingClass/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyProgrammingClass/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyProgrammingClass/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="f6c4ccb7-f1fa-4ce5-8896-3ef37685be17" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
