@@ -55,6 +55,15 @@ public class Main {
         //Variables segun el ambito que tienen -> sitios donde una variable es visible
 
 
+        //Ejercicios t3
+        exercicesT3 ejerciciosT3 = new exercicesT3();
+        ejerciciosT3.MayorEdad();
+        
+
+
+
+
+
 }
     public static void nombreMetodo(){  //metodo / funcion , void = que el metodo no retorna ningun valor,
         int edadMetodo = 12; //esta varaible solo existe aqui fuera del } no existe
