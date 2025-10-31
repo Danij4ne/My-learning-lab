@@ -1,4 +1,6 @@
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class exercicesT3 {
@@ -62,42 +64,71 @@ public class exercicesT3 {
     //ex12
     
 
-        public void  PasswordValidator() {
-    
+       public void validatorCon() {
         Scanner showme = new Scanner(System.in);
 
         System.out.print("Introduce una contraseña: ");
-        String myPassword = showme.nextLine();
+        String contrasenia = showme.nextLine().trim(); // .trim() quita espacios al inicio/fin
 
-        // 1️⃣ Longitud mínima de 8 caracteres
-        boolean longitud = myPassword.length() >= 8;
-        System.out.printf("¿Tiene al menos 8 caracteres?: %b%n", longitud);
+        int longitudContrasenia = contrasenia.length();
+        System.out.printf("La longitud de tu contraseña es: %d%n", longitudContrasenia); // %d = entero
 
-        // 2️⃣ Contiene al menos un número
-        boolean numbers = myPassword.matches(".*\\d.*");
-        System.out.printf("¿Contiene al menos un número?: %b%n", numbers);
+        boolean myLongitudOk = contrasenia.length() >= 8; // regla: mínimo 8
+        System.out.printf("¿Tiene al menos 8 caracteres? : %b%n", myLongitudOk); // %b = boolean
 
-        // 3️⃣ No puede ser una contraseña prohibida
-        boolean prohibido = myPassword.equals("12345678") || myPassword.equalsIgnoreCase("password");
-        System.out.printf("¿Es una contraseña prohibida?: %b%n", prohibido);
+        boolean tieneNumero = contrasenia.matches(".*\\d.*"); // contiene al menos un dígito
+        System.out.printf("¿Contiene un número? : %b%n", tieneNumero);
 
-        // 4️⃣ Evaluar si es válida
-        boolean valido = longitud && numbers && !prohibido;
-        System.out.printf("¿Es válida? (cumple todos los requisitos): %b%n", valido);
+        // Lista de contraseñas prohibidas (en minúsculas)
+        Set<String> prohibidas = new HashSet<>();
+        prohibidas.add("password");
+        prohibidas.add("12345678");
+        prohibidas.add("qwerty");
+        prohibidas.add("admin");
 
-        // 5️⃣ Mostrar resultado final
-        if (!valido) {
-            System.out.println("❌ Contraseña NO válida. Debe cumplir los siguientes requisitos:");
-            if (!longitud) System.out.println("- Tener al menos 8 caracteres.");
-            if (!numbers) System.out.println("- Contener al menos un número.");
-            if (prohibido) System.out.println("- No usar contraseñas prohibidas como '12345678' o 'password'.");
-        } else {
-            System.out.println("✅ Contraseña válida. ¡Bien hecho!");
-        }
+        String lower = contrasenia.toLowerCase();
+        boolean esProhibido = prohibidas.contains(lower); 
+        System.out.printf("¿Es una contraseña prohibida? : %b%n", esProhibido);
 
+        // Válida solo si NO es prohibida Y tiene número Y cumple longitud
+        boolean contraseniaValida = !esProhibido && tieneNumero && myLongitudOk;
+        System.out.printf("¿Es una contraseña válida (cumple todos los requisitos)? : %b%n", contraseniaValida);
         showme.close();
-    
-}
+        
+    }
+
+
+    //ex13
+     public void ElegiblePrestamo() {
+        Scanner showme = new Scanner(System.in);
+
+        System.out.print("Edad: ");
+        int myEdad = showme.nextInt();
+
+        System.out.print("Ingresos mensuales (€): ");
+        int ingresos = showme.nextInt();
+
+        System.out.print("¿Tienes deudas pendientes? (true/false): ");
+        boolean deudas = showme.nextBoolean();
+
+        // 🧠 1️⃣ Verificar edad
+        boolean edadValida = myEdad >= 21 && myEdad <= 65;
+        System.out.printf("¿Edad entre 21 y 65?: %b%n", edadValida);
+
+        // 🧠 2️⃣ Verificar ingresos
+        boolean ingresosSuficientes = ingresos >= 1000;
+        System.out.printf("¿Ingresos >= 1000€?: %b%n", ingresosSuficientes);
+
+        // 🧠 3️⃣ Verificar que NO tenga deudas
+        boolean sinDeudas = !deudas; // si el usuario puso true = tiene deudas → false aquí
+        System.out.printf("¿Sin deudas pendientes?: %b%n", sinDeudas);
+
+        // 🧠 4️⃣ Condición final
+        boolean elegiblePrestamo = edadValida && ingresosSuficientes && sinDeudas;
+        System.out.printf("¿Elegible para préstamo?: %b%n", elegiblePrestamo);
+
+        showme.close(); 
+    }
 
 
 

@@ -53,15 +53,43 @@ public class exswitch {
             }
 
         }
-        scanner = null;
+        scanner.close();
 
     }
 
 
+    public void DiaSemana(){
+         Scanner scanner = new Scanner(System.in);
+         System.out.println("Indicame un numero : ");
+         int numbero = scanner.nextInt();
+         switch (numbero) {
+            case 1:
+                System.out.println("El dia 1 es : Lunes  ");
+                break;
+            case 2:
+                System.out.println("El dia 2 es : Martes  ");
+                break;
+            case 3:
+                System.out.println("El dia 3 es : Miercoles ");
+                break;
+            case 4:
+                System.out.println("El dia 4 es : Jueves ");
+                break;
+            case 5:
+                System.out.println("El dia 5 es : Viernes ");
+                break;
+            case 6:
+                System.out.println("El dia 6 es : Sabado ");
+                break;
+            case 7:
+                System.out.println("El dia 7 es : Domingo ");
+                break;
+            default:
+                System.out.println("ERROR numero no valido ");
 
-
-
-
+         }
+        
+    }
 
 }
 

@@ -29,7 +29,15 @@ public class Main {
         int numeroBase = numero1; //y lo pasas a uno menor
 
 
+        //Casteos -> pasar temporalmente una variable de un tipo a otro
+        int numeros = 140;
+        char letra = (char) numeros; //acabamos de pasar numeros que era int a char y la hemos guardado en letra
 
+
+        //Recolector de basura (que puede lastrar la ejecucion de mi programa) -> recopilar todas las variables o elementos del codigo que no se utilicen y tengan un valor null
+        String hola = null;
+        System.gc(); //hace una recoleccion completa de todo lo que sea nulo y libera la memoria del ordenador 
+        String nombre ="Borja";
 
 
 

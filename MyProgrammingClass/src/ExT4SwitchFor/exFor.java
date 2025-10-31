@@ -1,5 +1,7 @@
 package ExT4SwitchFor;
 
+import java.util.Scanner;
+
 public class exFor {
 
 
@@ -22,6 +24,35 @@ public class exFor {
 
         // Cuando i pasa de 5, la condición i <= 5 deja de cumplirse y el bucle termina
     }
+
+        //ex6
+        public void TablaMultiplicador(){ 
+            Scanner scanner = new Scanner(System.in); 
+            System.out.println("Introduce un numero : "); 
+            int myNumber = scanner.nextInt(); 
+            for(int i = 1; i <= 10 ; i++){ int newNumber = myNumber * i ; 
+                System.out.printf("%d x %d = %d \n", myNumber, i , newNumber); 
+                scanner.close();
+
+            }
+         }
+
+        //ex7
+         public void NumberSum(){
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Introduce un numero : "); 
+            int myNumber = scanner.nextInt();
+            int newNumber = 0;
+            for(int i = 1; i <= myNumber ; i++){
+                 newNumber = newNumber + i;
+                 System.out.println("La suma es :  " +newNumber ); 
+
+            }
+         }
+
+
+
+
 
 
 
