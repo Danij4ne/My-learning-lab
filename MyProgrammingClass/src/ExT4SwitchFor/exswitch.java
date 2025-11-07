@@ -164,41 +164,85 @@ public class exswitch {
 
 
         }
-
-        
-        //ex4
-        
-
-
-
-
-
-
-
-
-
-
-
-
+        showme.close();
 
        }
 
 
 
+//ex4
+public void MenuOpciones(){
+    Scanner showme = new Scanner(System.in);
+    System.out.println("-----Menú---------");
+    System.out.println("1. Ver perfil ");
+    System.out.println("2. Configuración ");
+    System.out.println("3. Ayuda ");
+    System.out.println("4. Salir ");
+    System.out.println("Elige una opción: ");
+    int options = showme.nextInt();
+    switch (options) {
+        case 1:
+            System.out.println("Bienvenido al menu de usuario");
+            break;
+        case 2:
+            System.out.println("Bienvenido al menu de configuración");
+            break;
+        case 3:
+            System.out.println("Estas en la zona de ayuda");
+            break;
+        case 4:
+            System.out.println("Hasta pronto");
+            break;
+        default:
+            System.out.println("INCORRECT NUMBER");
 
+   
+        }
+        showme.close();
+}
 
+//ex5
+public void EstacionesDelAño() {
+        Scanner sc = new Scanner(System.in);
 
+        // Pedir el número del mes
+        System.out.print("Introduce el número del mes (1-12): ");
+        int mes = sc.nextInt();
 
+        String estacion;
 
+        // Usar switch para determinar la estación
+        switch (mes) {
+            case 12:
+            case 1:
+            case 2:
+                estacion = "Invierno";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                estacion = "Primavera";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                estacion = "Verano";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                estacion = "Otoño";
+                break;
+            default:
+                estacion = "Mes inválido. Debe estar entre 1 y 12.";
+                break;
+        }
 
+        // Mostrar el resultado
+        System.out.println("El mes " + mes + " corresponde a: " + estacion);
 
-
-
-
-
-
-
-
+        sc.close();
+    }
 
 
 }

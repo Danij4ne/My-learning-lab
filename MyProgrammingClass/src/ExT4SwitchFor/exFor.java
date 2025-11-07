@@ -63,23 +63,33 @@ public class exFor {
         scanner.close();
     }
 
+    //ex9
+ 
 
+    public void FactorialFor() {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Introduce un número entero positivo: ");
+        int n = sc.nextInt();
 
+        System.out.println("Calculando " + n + "!");
 
+        int factorial = 1; 
+        for (int i = n; i >= 1; i--) {
+            System.out.print(i);
+            if (i > 1) {
+                System.out.print(" x ");
+            }
+            factorial *= i; 
+        }
 
+        System.out.println();
+        System.out.println("El factorial de " + n + " es: " + factorial);
 
+        sc.close();
+    }
 
-
-
-
-
-
-
-
-
-
-
+    //ex10 exp class
 
 
 

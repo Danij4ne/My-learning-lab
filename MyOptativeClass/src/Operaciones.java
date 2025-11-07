@@ -33,5 +33,44 @@ public class Operaciones {
     }
     
 
+// 🔹 Método que devuelve un número según el estado del servidor
+    public int codigoAceptar(String estado) {
+
+        // Si el texto que recibe es exactamente "levantado"
+        if (estado.equals("levantado")) {
+            return 200;  // Devuelve el código 200 → Todo funciona bien
+
+        // Si el texto es "levantado problemas"
+        } else if (estado.equals("levantado problemas")) {
+            return 400;  // Devuelve el código 400 → Error del cliente
+
+        // Si no coincide con ninguno de los anteriores
+        } else {
+            return 500;  // Devuelve el código 500 → Error del servidor
+        }
+    }
+
+    // 🔹 Método que evalúa el código recibido y muestra un mensaje
+    public void evaluarCodigo(String estado) {
+
+        // Llama al método codigoAceptar() y usa su resultado dentro del switch
+        switch (codigoAceptar(estado)) {
+
+            // Si el código devuelto es 200
+            case 200 -> {
+                System.out.println("✅ Código 200: El servicio respondió correctamente");
+            }
+
+            // Si el código devuelto es 400
+            case 400 -> {
+                System.out.println("⚠️ Código 400: El servicio respondió con error del cliente");
+            }
+
+            // Si el código devuelto es 500
+            case 500 -> {
+                System.out.println("❌ Código 500: El servidor no pudo procesar la solicitud");
+            }
+        }
+    }
 
 }
