@@ -29,6 +29,29 @@ public class doWhile {
         scanner.close(); // ✅ Cerramos el Scanner
     }
 
+    //ex2
+
+     public void ValidadorContra() {
+    Scanner showme = new Scanner(System.in);
+    String contrasenia = "1234";
+    String introcon;
+
+    do {
+        System.out.print("Introduce la contraseña: ");
+        introcon = showme.nextLine();
+
+        if (!introcon.equals(contrasenia)) {
+            System.out.println("Contraseña incorrecta. Intenta de nuevo.");
+        }
+
+    } while (!introcon.equals(contrasenia));
+
+    System.out.println("¡Contraseña correcta! Acceso permitido.");
+
+    showme.close();
+}
+
+
 
 
 
