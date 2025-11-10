@@ -51,27 +51,55 @@ Scanner scanner = new Scanner(System.in);
     
     }
 
-    //ex3
-    public void acumulative() {
-        Scanner showme = new Scanner(System.in);
-        int introNumber;
-        int suma = 0; // acumulador de la suma
 
-        do {
-            System.out.print("Introduce un número (0 o negativo para terminar): ");
-            introNumber = showme.nextInt();
+  //ex 6
 
-            if (introNumber > 0) {
-                suma += introNumber; // sumamos al total
-                System.out.println("Suma actual: " + suma);
-            }
+  public void cuentaatras() {
+    Scanner showme = new Scanner(System.in);
+    System.out.print("Introduce un número: ");
+    int mynumber = showme.nextInt();
 
-        } while (introNumber > 0); // repetir mientras sea positivo
+    System.out.println("Cuenta atrás:");
 
-        System.out.println("Programa terminado. Suma total: " + suma);
-        showme.close();
+    // 🔁 Cuenta desde N hasta 1
+    while (mynumber >= 1) {
+        System.out.println(mynumber);
+        mynumber--;  // 👈 importante: disminuye el número en cada vuelta
+    }
+
+    System.out.println("¡Despegue!");
+
+    showme.close();
 }
 
+//ex 7
+
+    public void calcularPromedio() {
+    Scanner showme = new Scanner(System.in);
+
+    System.out.print("¿Cuántas calificaciones vas a introducir?: ");
+    int cantidad = showme.nextInt();  // 🔹 Número total de calificaciones
+
+    double suma = 0;                  // 🔹 Acumulador para sumar todas las notas
+    int contador = 1;                 // 🔹 Contador para llevar cuántas calificaciones llevamos
+
+    // 🔁 Bucle while que se repite hasta llegar al número indicado
+    while (contador <= cantidad) {
+        System.out.print("Introduce la calificación " + contador + ": ");
+        double nota = showme.nextDouble();  // 📥 leer nota
+        suma += nota;                       // ➕ sumarla al total
+        contador++;                         // ⏫ pasar a la siguiente calificación
+    }
+
+    // 📊 Calcular el promedio
+    double promedio = suma / cantidad;
+
+    // 🖨️ Mostrar resultados
+    System.out.println("Suma total: " + suma);
+    System.out.println("Promedio de calificaciones: " + promedio);
+
+    showme.close();
+}
 
 
 
