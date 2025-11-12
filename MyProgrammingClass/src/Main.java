@@ -54,10 +54,6 @@ public class Main {
 
         //Variables segun el ambito que tienen -> sitios donde una variable es visible
 
-
-        //Ejercicios t3
-        exercicesT3 ejerciciosT3 = new exercicesT3();
-        ejerciciosT3.MayorEdad();
         
 
 

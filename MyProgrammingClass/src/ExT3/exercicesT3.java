@@ -98,7 +98,7 @@ public class exercicesT3 {
     }
 
 
-    //ex13
+    
      public void ElegiblePrestamo() {
         Scanner showme = new Scanner(System.in);
 
