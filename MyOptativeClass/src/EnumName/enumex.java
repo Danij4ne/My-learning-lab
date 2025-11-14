@@ -37,7 +37,7 @@ public class enumex {
         }
     }
 
-    //ej2 
+    //ex2 
     public void ConversorMonedas(){
     Scanner showme = new Scanner (System.in);
     enum Moneda {
@@ -74,6 +74,160 @@ public class enumex {
             }
 
             System.out.printf("%.2f euros son %.2f en %s.%n", euros, convertido, monedaSeleccionada);
+            showme.close();
+        }
+
+
+        }
+
+ 
+    // ex3
+        public void Temperature() {
+            Scanner showme = new Scanner(System.in);
+            System.out.println("¿Qué temperatura hace?");
+            int temperatura = showme.nextInt();
+
+            switch (true) {
+
+                case true:
+                    if (temperatura < 0) {
+                        System.out.println("Helado");
+
+                    } else if (temperatura >= 0 && temperatura <= 15) {
+                        System.out.println("Frío");
+
+                    } else if (temperatura >= 16 && temperatura <= 25) {
+                        System.out.println("Templado");
+
+                    } else if (temperatura >= 26 && temperatura <= 35) {
+                        System.out.println("Calor");
+
+                    } else {
+                        System.out.println("Muy Caliente");
+                    }
+                    break;
+
+                default:
+                    break;
+            } 
+            showme.close();
+        }
+
+
+        public enum CategoriaPlato{
+                ENTRADA,
+                PRINCIPAL,
+                POSTRE,
+                BEBIDA
+            }
+
+
+    //ex4 
+       
+        public void RestaurantMenu() {
+
+            Scanner showme = new Scanner(System.in);
+            System.out.println("1. Entrada");
+            System.out.println("2. Principal");
+            System.out.println("3. Postre");
+            System.out.println("4. Bebida");
+            System.out.println("Elige una categoría:");
+            int opcion = showme.nextInt();
+
+            CategoriaPlato categoria = null;
+
+    
+            switch (opcion) {
+                case 1 -> categoria = CategoriaPlato.ENTRADA;
+                case 2 -> categoria = CategoriaPlato.PRINCIPAL;
+                case 3 -> categoria = CategoriaPlato.POSTRE;
+                case 4 -> categoria = CategoriaPlato.BEBIDA;
+                default -> {
+                    System.out.println("Opción no válida");
+                    return;
+                }
+            } 
+
+    
+            switch (categoria) {
+
+                case ENTRADA -> {
+                    System.out.println("Opciones de ENTRADA:");
+                    System.out.println("1. Ensalada César");
+                    System.out.println("2. Sopa de Calabaza");
+                    System.out.println("3. Nachos con queso");
+                }
+
+                case PRINCIPAL -> {
+                    System.out.println("Opciones PRINCIPALES:");
+                    System.out.println("1. Pollo Asado");
+                    System.out.println("2. Pasta Carbonara");
+                    System.out.println("3. Hamburguesa Completa");
+                }
+
+                case POSTRE -> {
+                    System.out.println("POSTRES:");
+                    System.out.println("1. Tarta de Chocolate");
+                    System.out.println("2. Helado");
+                    System.out.println("3. Flan");
+                }
+
+                case BEBIDA -> {
+                    System.out.println("BEBIDAS:");
+                    System.out.println("1. Agua");
+                    System.out.println("2. Refresco");
+                    System.out.println("3. Café");
+                }
+            }
+            showme.close();
+        }
+
+        //ex 5 
+
+        public void BasicOperations() {
+            Scanner showme = new Scanner(System.in);
+
+    
+            System.out.println("Añade tu primera variable :");
+            double num1 = showme.nextDouble();
+            System.out.println("Añade tu segunda variable :");
+            double num2 = showme.nextDouble();
+
+   
+            System.out.println("Declara el operador ('+', '-', '*', '/'): ");
+            char operador = showme.next().charAt(0);
+
+            double result;
+
+            switch (operador) {
+
+                case '+':
+                    result = num1 + num2;
+                    System.out.printf("%.2f %c %.2f = %.2f%n", num1, operador, num2, result);
+                    break;
+
+                case '-':
+                    result = num1 - num2;
+                    System.out.printf("%.2f %c %.2f = %.2f%n", num1, operador, num2, result);
+                    break;
+
+                case '*':
+                    result = num1 * num2;
+                    System.out.printf("%.2f %c %.2f = %.2f%n", num1, operador, num2, result);
+                    break;
+
+                case '/':
+                    if (num2 == 0) {
+                        System.out.println("❌ ERROR: No se puede dividir entre 0.");
+                        return;  // Detiene el método
+                    }
+                    result = num1 / num2;
+                    System.out.printf("%.2f %c %.2f = %.2f%n", num1, operador, num2, result);
+                    break;
+
+                default:
+                    System.out.println("ERROR: Operador no válido.");
+            }
         }
 
 
@@ -83,4 +237,9 @@ public class enumex {
 
  }
 
-}
+
+
+
+
+
+
